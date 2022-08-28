@@ -29,9 +29,13 @@
     "**/.vscode/**"
   ],
   "cSpell.words": [
+    "chave",
+    "contador",
+    "evento",
     "femi",
     "feminino",
     "gostaram",
+    "imprimir",
     "masculino",
     "Nenhuma",
     "pesquisa",
@@ -48,6 +52,7 @@
     "respondeu",
     "sexo",
     "Simou",
-    "totaldepessoas"
+    "totaldepessoas",
+    "vetor"
   ]
 }
