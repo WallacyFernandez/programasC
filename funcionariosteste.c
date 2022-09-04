@@ -16,7 +16,7 @@ int main(void)
   int contador, escolha, cont2 = 0, cont3 = 0, quantidadedealocacoes = 1, total = 1, unico;
   int numeroescolhido;
   int controlador = 0;
-  int n1, n2, n3, n4, n5, n6, n7, n8, n9, n10; // variaveis de contrele while
+  int n1, n2, n3, n4, n5, n6, n7, n8, n9, n10; // variaveis de controle while
 
   Funcionario *vetor = (Funcionario *)malloc(1 * sizeof(Funcionario));
 
@@ -207,9 +207,10 @@ int main(void)
         else
         {
           printf("\n----(BUSCA POR FUNCIONARIO)---- \n\n");
+          printf("\nObs: Caso nao lembre do numero do funcionario volte ao inicio e consulte a lista geral. \n");
           printf("Digite o numero do funcionario desejado: ");
           scanf("%d", &unico);
-          printf("\n Obs: caso nao lembre do numero do funcionario volte ao inicio e consulte a lista geral. \n");
+         
 
           if (unico < 1)
           {

@@ -1,35 +1,62 @@
 #include <stdio.h>
 
+
+void preenche_ordenado(int n, int *v){
+int i, j, aux;
+
+for (i=0 ; i< n ; i++){
+
+printf("\n----preencha o vetor----\n\n");
+
+printf("Digite a posicao (%d), do vetor: \n", i);
+scanf("%d", &v[i]);
+
+}
+
+
+for (i = 0; i < n ; i++){
+   
+   for (j = i + 1; j < n ; j++){
+      if (v[i] > v[j]){
+        aux = v[i];
+        v[i] = v[j];
+        v[j] = aux;
+      }
+   }
+
+
+}
+
+
+
+printf("N: %d\n", v[0 + 1]);
+
+for(i = 0; i < n ; i++){
+
+printf("Numeros : %d\n", v[i]);
+
+}
+
+}
+
+
+
 main(){
+int n;
 
-float notas[] = {vet};
+printf("Quantiade de elementos: ");
+scanf("%d", &n);
 
-float total = 0;
+int *vetor = (int *)malloc(n * sizeof(int));
 
-float media = 0;
+preenche_ordenado(n, &vetor);
 
-int i;
 
-printf("Insira 5 notas:\n");
 
-for(i=0;i<vet;i++){
 
-scanf("%f",&notas);
 
-}
 
-for(i=0;i<vet;i++){
-
-total += notas;
-
-}
-
-printf("total = %d\n",total);
-
-media = total/vet;
-
-printf("A media do aluno: %f ", media);
-
+free (vetor);
 return 0;
 
 }

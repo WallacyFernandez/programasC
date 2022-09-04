@@ -19,9 +19,10 @@ o perímetro de um hexágono de lado l informado pelo usuário.*/
 // funcao com ponteiros para alterar o conteudo das variaveis aerea e perimetro.
 void calcula_hexagono(float l, float *area, float *perimetro){ // prototipo da funcao 
 
-*area = 3 * pow(l, 2) * sqrt(3) / 2; // formula para encontrar a area
+*area = 3 * pow(l, 2) * sqrt(3) / 2; // usando formula e aplicando ao conteudo da variavel area
 
-*perimetro = 6 * l; // a formula para encontar os perimetro
+*perimetro = 6 * l; // usando formula e aplicando ao conteudo da variavel perimetro
+
 }
 
 int main (void){ //funcao principal
@@ -35,8 +36,8 @@ scanf("%f", &l);//o scanf  faz a leitura do que usario digitou e depois
 // guarda na variavel que esta indicado ou seja  l.
 
 calcula_hexagono(l, &area, &perimetro);
-// retorna a funcao para int main onde ela pegar as informacoes do usuario e logo apos aplica na formula indicada
- 
+// chamada da funcao e enviando endereco das variaveis como parametro para armazenaz os calculos.
+
 printf("area: %.2f\n", area); // resultado final valor com o valor da area
 printf("perimetro: %.2f\n", perimetro); //resultado final com valor do perimetro 
  
