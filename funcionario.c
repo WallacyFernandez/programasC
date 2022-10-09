@@ -12,7 +12,7 @@ typedef struct funcionario
 
 int main(void)
 {
-
+  float folha = 0;
   int contador, escolha, cont2 = 0, cont3 = 0, quantidadedealocacoes = 1, total = 1, unico;
   int numeroescolhido;
   int controlador = 0;
@@ -119,6 +119,7 @@ int main(void)
 
           printf("Digite o salario do funcionario\n");
           scanf("%f", &vetor[contador].salario);
+
         }
         cont3++;
         total++;
@@ -184,10 +185,25 @@ int main(void)
               printf("Idade: %d\n", vetor[contador].idade);
               printf("Salario: R$ %.2f\n", vetor[contador].salario);
               printf("\n");
-            }
 
-            printf("Voltar ao inicio? (1)sim ou (2)nao \n");
-            scanf("%d", &n5);
+            }
+            
+             folha = 0;
+            for (contador = 0; contador < cont3; contador++)
+            {
+
+              folha = vetor[contador].salario + folha;
+
+              
+              
+            }
+             
+             printf("Total gasto com salarios: R$ %.2f\n", folha);
+             printf("\n");
+
+
+             printf("Voltar ao inicio? (1)sim ou (2)nao \n");
+             scanf("%d", &n5);
             if(n5 == 2){
                printf("Programa encerrado\n");
                exit(1); 

@@ -1,0 +1,18 @@
+
+----(DADOS DOS FUNCIONARIOS)----
+
+Funcionario(1)
+Cargo: ceo
+Nome: wa
+Idade: 21
+Salario: R$ 543223.00
+
+
+Funcionario(2)
+Cargo: ge
+Nome: wll
+Idade: 32
+Salario: R$ 123432.00
+
+Total gasto com salarios: R$ 666655.00
+
