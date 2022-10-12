@@ -1,3 +1,0 @@
-Maior valor: 99 
-Menor valor: 0 
-media do vetor: 46 

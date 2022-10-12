@@ -13,9 +13,10 @@ typedef struct funcionario
 int main(void)
 {
   float folha = 0;
-  int contador, escolha, cont2 = 0, cont3 = 0, quantidadedealocacoes = 1, total = 1, unico;
+  int contador, escolha, cont2 = 0, cont3 = 0, cont4 = 0, quantidadedealocacoes = 1, total = 1, unico;
   int numeroescolhido, bancoEtxt;
   int controlador = 0;
+  char vet[1000];
   int n1, n2, n3, n4, n5, n6, n7, n8, n9, n10, n11, n12, n13, n14; // variaveis de controle while
 
   Funcionario *vetor = (Funcionario *)malloc(1 * sizeof(Funcionario));
@@ -417,18 +418,8 @@ int main(void)
               FILE *arquivo;
               arquivo = fopen("banco.txt", "w");
 
-              folha = 0;
               for (contador = 0; contador < cont3; contador++)
               {
-
-                folha = vetor[contador].salario + folha;
-              }
-
-              fprintf(arquivo, "%.2f\n", folha);
-
-              for (contador = 0; contador < cont3; contador++)
-              {
-
 
                 fprintf(arquivo, "%s\n", vetor[contador].cargo);
                 fprintf(arquivo, "%s\n", vetor[contador].nome);
@@ -462,7 +453,6 @@ int main(void)
         {
           printf("\n----(ERRO)---- \n\n");
 
-
           printf("Voce nao fez login ainda.\n");
           printf("Voltar ao inicio? (1)sim ou (2)nao \n");
           scanf("%d", &n14);
@@ -480,17 +470,30 @@ int main(void)
         FILE *banco;
 
         banco = fopen("banco.txt", "r");
+        cont4 = 0;
 
-        while (fscanf(banco, "%f %[^\n] %[^\n]%d%d", &folha, vetor[contador].cargo, vetor[contador].nome, &vetor[contador].idade, &vetor[contador].salario) != -1)
+        while (fgets(vet, 1000, banco) != NULL)
         {
 
+          cont4++;
+        }
 
+        for (contador = 0; contador < cont4; contador++)
+        {
+
+          fscanf(banco, " %[^\n]", vetor[contador].cargo);
+          fscanf(banco, " %[^\n]", vetor[contador].nome);
+          fscanf(banco, "%d", &vetor[contador].idade);
+          fscanf(banco, "%f", &vetor[contador].salario);
           quantidadedealocacoes++;
 
           cont3++;
+
           total++;
           vetor = realloc(vetor, quantidadedealocacoes * (sizeof(Funcionario)));
         }
+
+        fclose(banco);
       }
     }
   }
