@@ -1,24 +1,42 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-float function_media( float notas, float notas1, float notas2,  int n1){
+void function_media(int *vetor){
  float media;
-     media = (notas + notas1 + notas2) / n1;
- return media;
+    
+
 }
 
 
 int main(){
 
-
-    int n1, n2, n4, n;
-float  notas, notas1, notas2, result;
+int i, j, tam, notas, cont = 0;
+float;
 
 
 printf("Informe a quantidade de alunos:\n");
-scanf("%d", &n4);
-for(n=0; n<n4; n++){
+scanf("%d", &tam);
+
+notas = tam * 3;
+
+float vetor[notas];
+
+for(i=1; i <= tam; i++){
+
+for(j = 0; j < 3 ; j++){
+
+   printf("Digite as notas do aluno (%d): ", i);
+   scanf("%f", &vetor[cont]);
+
+   cont++;
+
+ }
+
+  
 
 
-n1 = 3;
-for(n2=1;n2<= 1 ;n2++){
+}
+
+function_media(&vetor);
+
+}

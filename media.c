@@ -11,7 +11,7 @@ for (int i = 0; i <= tam; i++){
 
     printf("Digite um numero: \n");
     scanf("%d", &numero);
-    soma = numero + soma
+    soma = numero + soma;
     if (numero >= 0){
 
         positiv++;

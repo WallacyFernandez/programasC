@@ -4,6 +4,8 @@ int main(){
     
 float valor, macas;
 
+printf("\n---Promoção leva 12 ou mais valor: 0,25 unidade---\n\n");
+
 printf("Digite a quantidade de macas que deseja: \n");
 scanf("%f", &macas);
 
