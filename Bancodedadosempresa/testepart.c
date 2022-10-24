@@ -150,10 +150,8 @@ int main(void)
 
         printf("\n----(DIGITE OS DADOS REFERENTES AOS FUNCIONARIOS)----\n");
 
-        while (contador < total)
-        {
-          contador = cont3;
-
+        for (contador = cont3; contador < total; contador++)
+        {      
           printf("\nDados do funcionario(%d)\n", contador + 1);
           printf("Digite o cargo do do funcionario:\n");
           scanf(" %[^\n]", vetor[contador].cargo);

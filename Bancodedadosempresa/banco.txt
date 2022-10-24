@@ -1,0 +1,9 @@
+4  Ceo
+ wallacy
+ 21 23456.00 gerente
+ zeta
+ 20 2345678.00 chefe
+ nicolas
+ 19 12344567.00 Baba ovo
+ italo
+ 27 13.99

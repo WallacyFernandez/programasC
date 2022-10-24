@@ -1,0 +1,32 @@
+
+----(DADOS DOS FUNCIONARIOS)----
+
+Funcionario(1)
+Cargo: Ceo
+Nome: wallacy
+Idade: 21
+Salario: R$ 23456.00
+
+
+Funcionario(2)
+Cargo: gerente
+Nome: zeta
+Idade: 20
+Salario: R$ 2345678.00
+
+
+Funcionario(3)
+Cargo: chefe
+Nome: nicolas
+Idade: 19
+Salario: R$ 12344567.00
+
+
+Funcionario(4)
+Cargo: Baba ovo
+Nome: italo
+Idade: 27
+Salario: R$ 13.99
+
+Total gasto com salarios: R$ 14713715.00
+
