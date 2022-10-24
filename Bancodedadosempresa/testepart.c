@@ -144,6 +144,7 @@ int main(void)
       }
       else if (cont2 == 1)
       {
+        
         system("cls");
 
         quantidadedealocacoes++;
