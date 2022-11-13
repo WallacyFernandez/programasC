@@ -23,10 +23,10 @@ Salario: R$ 12344567.00
 
 
 Funcionario(4)
-Cargo: Baba ovo
-Nome: italo
-Idade: 27
-Salario: R$ 13.99
+Cargo: Baba bolas two
+Nome: Kleber bolas
+Idade: 24
+Salario: R$ 2.00
 
-Total gasto com salarios: R$ 14713715.00
+Total gasto com salarios: R$ 14713703.00
 

@@ -34,8 +34,35 @@ int main(void)
     printf("Atualizar Banco de dados (8)\n");
     printf("Alterar dados de um funcionario especifico (9)\n");
     printf("Para sair do site digite (10)\n");
-    printf("escolha: ");
-    scanf("%d", &escolha);
+        retorno = 0;
+        while (retorno != 1)
+        {
+        
+          printf("escolha: ");
+          retorno2 = scanf("%d", &escolha);
+
+          if (escolha > 0 && escolha < 11)
+          {
+
+            retorno = retorno2;
+          }
+
+          if (retorno == 0)
+          {
+            printf("\n---(Valor inserido invalido)---\n\n");
+          }
+          letra = 0;
+          while (letra != '\n')
+          {
+
+            letra = getchar();
+          }
+
+          
+          printf("\n");
+        }
+      
+    
     printf("\n");
 
     if (escolha == 1)
