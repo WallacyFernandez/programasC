@@ -3,7 +3,6 @@
 
 void function_media(int *vetor){
  float media;
-    
 
 }
 

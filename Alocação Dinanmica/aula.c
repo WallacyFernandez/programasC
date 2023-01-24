@@ -4,26 +4,25 @@
 
 int main(void)
 {
-int tam, i;
+    int tam, i;
 
     printf("Digite o tamanho do vetor: \n");
     scanf("%d", &tam);
 
-    int *vetor = (int*) malloc(tam * sizeof(int));
+    int *vetor = (int *)malloc(tam * sizeof(int));
 
-    for (i = 0; i < tam; i++){
+    for (i = 0; i < tam; i++)
+    {
 
-    printf("Digite o numero da posicao (%d) do vetor: ", i + 1);
-    scanf("%d", &vetor[i]);
-
+        printf("Digite o numero da posicao (%d) do vetor: ", i + 1);
+        scanf("%d", &vetor[i]);
     }
     printf("\n");
 
-    for (i = 0; i < tam; i++){
+    for (i = 0; i < tam; i++)
+    {
 
-    printf("  [%d] = %d  ", i + 1, vetor[i]);
-    
-
+        printf("  [%d] = %d  ", i + 1, vetor[i]);
     }
 
     free(vetor);
