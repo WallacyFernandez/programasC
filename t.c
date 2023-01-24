@@ -19,26 +19,25 @@ typedef struct lista
 
 } Listf;
 
-
 void inserirInicio(Lista *lista)
 {
     system("cls");
-     No *novo = (No *)malloc(sizeof(No));
-     
-     printf("Digite o local: \n");
-     scanf(" %[^\n]", novo->localizacao);
-     printf("Digite o hora de entrada exemplo (12:30):  \n");
-     scanf(" %[^\n]", novo->horadeentrada);
-     printf("Digite o hora de saida exemplo (12:30):  \n");
-     scanf(" %[^\n]", novo->horadesaida);
-     printf("Digite o total de horas trabalhadas: \n");
-     scanf("%f", &novo->totaldehorastrabalhadas);
-     printf("Digite o horario de pausa exemplo (12:30): \n");
-     scanf(" %[^\n]", novo->pausa);
-    
-     novo->proximo = lista -> inicio;
-     lista->inicio = novo;
-     lista->tam++;
+    No *novo = (No *)malloc(sizeof(No));
+
+    printf("Digite o local: \n");
+    scanf(" %[^\n]", novo->localizacao);
+    printf("Digite o hora de entrada exemplo (12:30):  \n");
+    scanf(" %[^\n]", novo->horadeentrada);
+    printf("Digite o hora de saida exemplo (12:30):  \n");
+    scanf(" %[^\n]", novo->horadesaida);
+    printf("Digite o total de horas trabalhadas: \n");
+    scanf("%f", &novo->totaldehorastrabalhadas);
+    printf("Digite o horario de pausa exemplo (12:30): \n");
+    scanf(" %[^\n]", novo->pausa);
+
+    novo->proximo = lista->inicio;
+    lista->inicio = novo;
+    lista->tam++;
 }
 
 void imprimir(Lista *lista)
@@ -51,13 +50,11 @@ void imprimir(Lista *lista)
     {
         printf("\n");
         printf("local informado: %s\n", inicio->localizacao);
-        printf("hora de entrada: %s\n", inicio->horadeentrada );
-        printf("hora de saida: %s\n", inicio->horadesaida );
+        printf("hora de entrada: %s\n", inicio->horadeentrada);
+        printf("hora de saida: %s\n", inicio->horadesaida);
         printf("total de horas trabalhadas: %.2f\n", inicio->totaldehorastrabalhadas);
-        printf("horario de pausa: %s\n", inicio-> pausa);
-    
-        
-        
+        printf("horario de pausa: %s\n", inicio->pausa);
+
         inicio = inicio->proximo;
         printf("\n");
     }
@@ -86,7 +83,7 @@ int main()
             imprimir(&lista);
             break;
         case 3:
-            
+
             break;
         case 4:
             printf("Finalizando...\n");
@@ -95,5 +92,4 @@ int main()
             printf("Opcao invalida!\n");
         }
     } while (opcao != 4);
-   
 }

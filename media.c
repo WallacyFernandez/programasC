@@ -1,30 +1,28 @@
 #include <stdio.h>
 
-int main (void) {
-int i, tam, numero;
-float negativ, positiv, soma, media;
+int main(void)
+{
+    int i, tam, numero;
+    float negativ, positiv, soma, media;
 
-printf ("Digite a quantidade de elementos: \n");
-scanf("%d", & tam);
+    printf("Digite a quantidade de elementos: \n");
+    scanf("%d", &tam);
 
-for (int i = 0; i <= tam; i++){
+    for (int i = 0; i <= tam; i++)
+    {
 
-    printf("Digite um numero: \n");
-    scanf("%d", &numero);
-    soma = numero + soma;
-    if (numero >= 0){
+        printf("Digite um numero: \n");
+        scanf("%d", &numero);
+        soma = numero + soma;
+        if (numero >= 0)
+        {
 
-        positiv++;
+            positiv++;
+        }
+        if (numero < 0)
+        {
+
+            negativ++;
+        }
     }
-    if(numero < 0){
-
-        negativ++;
-
-    }
-     
-}
-
-
-
-
 }

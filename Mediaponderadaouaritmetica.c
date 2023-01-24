@@ -8,10 +8,8 @@ int main()
     printf("Qual a media deseja?\na - aritmetica\np - ponderada\n");
     scanf("%c", &escolha);
 
-    
-        printf("Digite as tres notas: \n");
-        scanf("%f%f%f", &nota1, &nota2, &nota3);
-    
+    printf("Digite as tres notas: \n");
+    scanf("%f%f%f", &nota1, &nota2, &nota3);
 
     if (escolha == 'a')
         printf("Media aritmetica: %.2f\n", (nota1 + nota2 + nota3) / 3);

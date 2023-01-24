@@ -1,41 +1,36 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void function_media(int *vetor){
- float media;
-
+void function_media(int *vetor)
+{
+  float media;
 }
 
+int main()
+{
 
-int main(){
+  int i, j, tam, notas, cont = 0;
+  float;
 
-int i, j, tam, notas, cont = 0;
-float;
+  printf("Informe a quantidade de alunos:\n");
+  scanf("%d", &tam);
 
+  notas = tam * 3;
 
-printf("Informe a quantidade de alunos:\n");
-scanf("%d", &tam);
+  float vetor[notas];
 
-notas = tam * 3;
+  for (i = 1; i <= tam; i++)
+  {
 
-float vetor[notas];
+    for (j = 0; j < 3; j++)
+    {
 
-for(i=1; i <= tam; i++){
+      printf("Digite as notas do aluno (%d): ", i);
+      scanf("%f", &vetor[cont]);
 
-for(j = 0; j < 3 ; j++){
+      cont++;
+    }
+  }
 
-   printf("Digite as notas do aluno (%d): ", i);
-   scanf("%f", &vetor[cont]);
-
-   cont++;
-
- }
-
-  
-
-
-}
-
-function_media(&vetor);
-
+  function_media(&vetor);
 }
