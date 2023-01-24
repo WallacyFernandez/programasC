@@ -34,35 +34,33 @@ int main(void)
     printf("Atualizar Banco de dados (8)\n");
     printf("Alterar dados de um funcionario especifico (9)\n");
     printf("Para sair do site digite (10)\n");
-        retorno = 0;
-        while (retorno != 1)
-        {
-        
-          printf("escolha: ");
-          retorno2 = scanf("%d", &escolha);
+    retorno = 0;
+    while (retorno != 1)
+    {
 
-          if (escolha > 0 && escolha < 11)
-          {
+      printf("escolha: ");
+      retorno2 = scanf("%d", &escolha);
 
-            retorno = retorno2;
-          }
+      if (escolha > 0 && escolha < 11)
+      {
 
-          if (retorno == 0)
-          {
-            printf("\n---(Valor inserido invalido)---\n\n");
-          }
-          letra = 0;
-          while (letra != '\n')
-          {
+        retorno = retorno2;
+      }
 
-            letra = getchar();
-          }
+      if (retorno == 0)
+      {
+        printf("\n---(Valor inserido invalido)---\n\n");
+      }
+      letra = 0;
+      while (letra != '\n')
+      {
 
-          
-          printf("\n");
-        }
-      
-    
+        letra = getchar();
+      }
+
+      printf("\n");
+    }
+
     printf("\n");
 
     if (escolha == 1)
@@ -171,7 +169,7 @@ int main(void)
       }
       else if (cont2 == 1)
       {
-        
+
         system("cls");
 
         quantidadedealocacoes++;
@@ -179,7 +177,7 @@ int main(void)
         printf("\n----(DIGITE OS DADOS REFERENTES AOS FUNCIONARIOS)----\n");
 
         for (contador = cont3; contador < total; contador++)
-        {      
+        {
           printf("\nDados do funcionario(%d)\n", contador + 1);
           printf("Digite o cargo do do funcionario:\n");
           scanf(" %[^\n]", vetor[contador].cargo);
@@ -460,8 +458,6 @@ int main(void)
           if (unico <= cont3 && unico > 0)
           {
             system("cls");
-
-            
 
             unico = unico - 1;
             printf("\n---(Informacoes do funcionario)---\n\n");

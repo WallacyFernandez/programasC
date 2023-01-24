@@ -435,9 +435,7 @@ int main(void)
           {
             system("cls");
 
-            
-
-            unico = unico - 1;
+                        unico = unico - 1;
             printf("\n---(Informacoes do funcionario)---\n\n");
             printf("\nfuncionario(%d)\n", unico + 1);
             printf("Cargo: %s\n", vetor[unico].cargo);

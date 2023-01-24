@@ -429,7 +429,6 @@ int main(void)
               for (contador = 0; contador < cont3; contador++)
               {
 
-
                 fprintf(arquivo, "%s\n", vetor[contador].cargo);
                 fprintf(arquivo, "%s\n", vetor[contador].nome);
                 fprintf(arquivo, "%d\n", vetor[contador].idade);
@@ -462,7 +461,6 @@ int main(void)
         {
           printf("\n----(ERRO)---- \n\n");
 
-
           printf("Voce nao fez login ainda.\n");
           printf("Voltar ao inicio? (1)sim ou (2)nao \n");
           scanf("%d", &n14);
@@ -483,7 +481,6 @@ int main(void)
 
         while (fscanf(banco, "%f %[^\n] %[^\n]%d%d", &folha, vetor[contador].cargo, vetor[contador].nome, &vetor[contador].idade, &vetor[contador].salario) != -1)
         {
-
 
           quantidadedealocacoes++;
 
