@@ -13,7 +13,7 @@ int calcula(int x, int y, int (*operacao)(int, int)){
 
 int main(){
 
-    int resultado = calcula(5, 3, soma);
+    int resultado = calcula(5, 3, mult);
     printf("%d\n", resultado);
     return;
 }
