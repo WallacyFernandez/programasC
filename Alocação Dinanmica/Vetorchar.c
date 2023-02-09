@@ -1,10 +1,11 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+
 int main(){
 
 
-    int chave, tam = 1, i, realoc = 0, j;
+    int chave, i;
     int quantfrutas;
 
     printf("Quntidade de frutas: \n");
@@ -41,6 +42,13 @@ int main(){
         scanf(" %[^\n]s", frutas[i]);
         printf("Digite o preco da fruta: \n");
         scanf("%f", &preco[i]);
+    }
+
+    for (i = 0; i < quantfrutas; i++)
+    {
+
+        printf("Digite o nome da fruta: %s\n", frutas[i]);
+        
     }
 
     printf("Continuar Sim(1) nao (2) \n");

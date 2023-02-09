@@ -1,0 +1,25 @@
+
+----(DADOS DOS FUNCIONARIOS)----
+
+Funcionario(1)
+Cargo: estagiario
+Nome: erick
+Idade: 16
+Salario: R$ 600.00
+
+
+Funcionario(2)
+Cargo: CEO
+Nome: wallacy
+Idade: 22
+Salario: R$ 2345656.00
+
+
+Funcionario(3)
+Cargo: TIA DO CAFE
+Nome: amiga de V
+Idade: 25
+Salario: R$ 123456.00
+
+Total gasto com salarios: R$ 2469712.00
+
