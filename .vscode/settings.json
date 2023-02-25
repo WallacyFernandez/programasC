@@ -62,5 +62,6 @@
   ],
   "files.associations": {
     "stdio.h": "c"
-  }
+  },
+  "C_Cpp_Runner.useAddressSanitizer": false
 }

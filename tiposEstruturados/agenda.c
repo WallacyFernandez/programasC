@@ -3,6 +3,7 @@
 #include<stdlib.h>
 
 typedef struct ingresso{
+
     int dianormal;
     int diaferias;
     char dataespecial [50];
@@ -12,6 +13,7 @@ typedef struct ingresso{
 void imprime(){
 
 int i, j;
+
 ingresso **mes = (ingresso **) malloc(12 * sizeof(ingresso *));
 
 for (i = 1; i <= 12; i++)
@@ -214,7 +216,8 @@ int main (void){
  printf("Para imprimir calendario (1)\n");
  printf("Introduzir evento na agenda (2)\n");
  printf("Consultar data(3)\n");
- scanf(" %d", &escolha);
+ printf("Escolha: ");
+ scanf("%d", &escolha);
 
 if(escolha == 1){
 
@@ -222,7 +225,11 @@ imprime();
 
 }else if(escolha == 2){
 
+
+}else if(escolha == 3){
+
 consulta();
+
 }
 
 return 0;

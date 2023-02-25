@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/walla/Área de Trabalho/.vscode/programasC/Bancodedadosempresa",
-      "program": "c:/Users/walla/Área de Trabalho/.vscode/programasC/Bancodedadosempresa/build/Debug/outDebug",
+      "cwd": "c:/Users/walla/Área de Trabalho/.vscode/programasC",
+      "program": "c:/Users/walla/Área de Trabalho/.vscode/programasC/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

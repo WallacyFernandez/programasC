@@ -141,3 +141,18 @@ int main(void)
    free(SimouNao);
    return 0;
 }
+
+
+
+/*  
+
+O pragrama inicia com um laço while de verificação
+em seguida crio vetores do tipo inteiro usando malloc
+Após isso entra laço while principal que primeiramente faz as perguntas para o usuario e apos isso 
+pergunta ao usuario se ele quer continuar a pesquisa se o usuario responder sim o laço se repete fazendo as mesmas perguntas
+se nao, o programa vai calcular as pocentagens relativas a cada sexo e printar o resultado na tela;
+o programa inicia com velor com 1 de espaço e a cada vez que o usuario responde que quer continuar a pesquisa o velor e imcrementado usando realloc 
+
+
+
+*/
