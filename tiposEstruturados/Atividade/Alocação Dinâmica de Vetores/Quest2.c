@@ -167,4 +167,12 @@ int main()
    porcentagem = (alunoaprovado*100) / 5;
    
    printf("porcentagem de aprovacao: %d%%\n", porcentagem);
+   free(prova);
+   free(gabarito);
 }
+
+/*
+
+O codi
+
+*/
