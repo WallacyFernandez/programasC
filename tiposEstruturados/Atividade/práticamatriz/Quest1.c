@@ -17,7 +17,19 @@ int main(){
     {
         for(j = 0; j < 5; j++){
 
-            printf("Preencha a matriz com ")
+            printf("Preencha a matriz com * ou #: ");
+            scanf("%c", &Matriz[i][j]);
+        }
+
+    }
+       printf("Preencha a matriz com * ou #: ");
+
+     for (i = 0; i < 5; i++)
+    {
+        for(j = 0; j < 5; j++){
+
+            printf("%c ", Matriz[i][j]);
+            
         }
 
     }
