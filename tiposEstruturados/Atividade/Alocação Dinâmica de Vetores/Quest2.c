@@ -12,6 +12,7 @@ int main()
 
       printf("Error");
       exit(1);
+      
    }
 
    gabarito = (int *)malloc(100 * sizeof(int));
